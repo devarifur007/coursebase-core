@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modules",
+  "info": {
+    "singularName": "module",
+    "pluralName": "modules",
+    "displayName": "Module"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "description": {
+      "type": "string"
+    },
+    "sortOrder": {
+      "type": "integer"
+    },
+    "course": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course.course",
+      "inversedBy": "modules"
+    },
+    "lessons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::lesson.lesson",
+      "mappedBy": "module"
+    }
+  }
+}
