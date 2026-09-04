@@ -501,6 +501,7 @@ export interface ApiCurriculumCurriculum extends Struct.CollectionTypeSchema {
       'api::curriculum.curriculum'
     > &
       Schema.Attribute.Private;
+    mdxContent: Schema.Attribute.Text;
     name: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'name'>;
