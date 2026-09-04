@@ -27,10 +27,10 @@
     "sortOrder": {
       "type": "integer"
     },
-    "module": {
+    "course": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::module.module",
+      "target": "api::course.course",
       "inversedBy": "lessons"
     }
   }

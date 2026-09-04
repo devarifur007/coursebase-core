@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * module controller
+ * curriculum controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::module.module');
+module.exports = createCoreController('api::curriculum.curriculum');

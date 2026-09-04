@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "modules",
+  "collectionName": "curriculums",
   "info": {
-    "singularName": "module",
-    "pluralName": "modules",
-    "displayName": "Module"
+    "singularName": "curriculum",
+    "pluralName": "curriculums",
+    "displayName": "Curriculum"
   },
   "options": {
     "draftAndPublish": false
@@ -24,17 +24,11 @@
     "sortOrder": {
       "type": "integer"
     },
-    "course": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::course.course",
-      "inversedBy": "modules"
-    },
-    "lessons": {
+    "courses": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::lesson.lesson",
-      "mappedBy": "module"
+      "target": "api::course.course",
+      "mappedBy": "curriculum"
     }
   }
 }

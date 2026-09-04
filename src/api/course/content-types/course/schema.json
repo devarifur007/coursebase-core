@@ -24,10 +24,16 @@
     "sortOrder": {
       "type": "integer"
     },
-    "modules": {
+    "curriculum": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::curriculum.curriculum",
+      "inversedBy": "courses"
+    },
+    "lessons": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::module.module",
+      "target": "api::lesson.lesson",
       "mappedBy": "course"
     }
   }
