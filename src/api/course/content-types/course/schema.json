@@ -21,6 +21,9 @@
     "description": {
       "type": "string"
     },
+    "mdxContent": {
+      "type": "text"
+    },
     "sortOrder": {
       "type": "integer"
     },
