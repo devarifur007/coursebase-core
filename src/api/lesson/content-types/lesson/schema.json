@@ -21,9 +21,6 @@
     "description": {
       "type": "string"
     },
-    "mdxContent": {
-      "type": "text"
-    },
     "sortOrder": {
       "type": "integer"
     },
@@ -32,6 +29,9 @@
       "relation": "manyToOne",
       "target": "api::course.course",
       "inversedBy": "lessons"
+    },
+    "mdxContent": {
+      "type": "richtext"
     }
   }
 }

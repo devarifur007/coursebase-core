@@ -535,7 +535,7 @@ export interface ApiLessonLesson extends Struct.CollectionTypeSchema {
       'api::lesson.lesson'
     > &
       Schema.Attribute.Private;
-    mdxContent: Schema.Attribute.Text;
+    mdxContent: Schema.Attribute.RichText;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'title'>;
     sortOrder: Schema.Attribute.Integer;
